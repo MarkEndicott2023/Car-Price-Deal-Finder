@@ -11,6 +11,7 @@ References:
 - Li & Lin (2021): MLPs vs linear regression for car prices (Stanford CS230)
 """
 
+import os
 import pandas as pd
 import numpy as np
 import json
@@ -35,7 +36,7 @@ print("=" * 60)
 print("PHASE 1: Data Loading & Cleaning")
 print("=" * 60)
 
-df = pd.read_csv('merged_output.csv')
+df = pd.read_csv(os.path.join(os.path.dirname(__file__), '..', 'data', 'merged_output.csv'))
 print(f"Raw dataset: {df.shape[0]:,} rows, {df.shape[1]} columns")
 
 # Drop UCI rows (only 201 rows, from 1985, missing year/mileage/model/transmission)

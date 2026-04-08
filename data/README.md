@@ -1,12 +1,12 @@
-# data_ingestion_zack
+# Data
 
-Zack's data ingestion pipeline. Loads three car-price datasets, maps them to a common schema, and merges them into a single CSV.
+Data ingestion pipeline. Loads three car-price datasets, maps them to a common schema, and merges them into a single CSV.
 
 ## Script
 
 - **merge_datasets.py** — Reads the three raw datasets, normalizes column names, and outputs `merged_output.csv` (~277K rows).
 
-## Raw Data
+## Raw Data (`raw/`)
 
 | File | Source | Rows | Description |
 |---|---|---|---|
